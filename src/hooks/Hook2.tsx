@@ -1,7 +1,13 @@
 import React from "react";
 import { useState } from "react";
 
-export const Hook2 = (name: string, display: string, startNum: number) => {
+export interface HookProps {
+  name: string;
+  display: string;
+  startNum: number;
+}
+
+export const Hook2 = ({ name, display, startNum }: HookProps) => {
   const [count, setCount] = useLocalStorage(name, startNum);
   return (
     <div>

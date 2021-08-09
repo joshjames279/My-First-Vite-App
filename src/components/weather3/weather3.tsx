@@ -1,6 +1,7 @@
 import React from "react";
-const mykey = `${import.meta.env.VITE_WEATHER_API_KEY}`;
 import { Component } from "react";
+
+const mykey = `${import.meta.env.VITE_WEATHER_API_KEY}`;
 
 interface Props {}
 interface State {
